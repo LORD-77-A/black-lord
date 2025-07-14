@@ -337,7 +337,7 @@ client.on('interactionCreate', async interaction => {
 
         const tags = config.channels[channelId]?.tags || [];
 
-        
+
         await interaction.reply({
             content: '**__⏳ جاري  بحث عن منشورات ونشرها ...__**',
             flags: 64
@@ -355,24 +355,24 @@ client.on('interactionCreate', async interaction => {
             content: `**__✅ تم نشر ${sentCount} منشور في <#${channelId}>__**`
         });
 
-    const reportChannel = await client.channels.fetch(config.summaryChannel);
-    const embed = new EmbedBuilder()
-        .setTitle('📊 تقرير نشر تلقائي')
-        .setColor('Orange')
-        .setDescription([
-            `📍 **__القناة__:** <#${channelId}>`,
-            `\n📦 **__عدد المنشورات: ${sentCount}__**`,
-            `\n👤 **__بواسطة:__** <@${interaction.user.id}>`,
-            `\n🕒 **__الوقت__:**\n**__ <t:${Math.floor(Date.now() / 1000)}:F>__**`
-        ].join('\n'))
-        .setThumbnail(interaction.user.displayAvatarURL({ dynamic: true }))
-        .setImage('https://cdn.discordapp.com/attachments/1339992638677323867/1392934377054273647/ab1aaa451bd920085c3a982fc532cf536a1eeca8f32037eda2393eb640d49612.png?ex=6874a27a&is=687350fa&hm=effd4ce54fd1e44a1a119354b61e37e45da20f876d2403552630b6ae77dd11f0&')
-        .setTimestamp();
+        const reportChannel = await client.channels.fetch(config.summaryChannel);
+        const embed = new EmbedBuilder()
+            .setTitle('📊 تقرير نشر تلقائي')
+            .setColor('Orange')
+            .setDescription([
+                `📍 **__القناة__:** <#${channelId}>`,
+                `\n📦 **__عدد المنشورات: ${sentCount}__**`,
+                `\n👤 **__بواسطة:__** <@${interaction.user.id}>`,
+                `\n🕒 **__الوقت__:**\n**__ <t:${Math.floor(Date.now() / 1000)}:F>__**`
+            ].join('\n'))
+            .setThumbnail(interaction.user.displayAvatarURL({ dynamic: true }))
+            .setImage('https://cdn.discordapp.com/attachments/1339992638677323867/1392934377054273647/ab1aaa451bd920085c3a982fc532cf536a1eeca8f32037eda2393eb640d49612.png?ex=6874a27a&is=687350fa&hm=effd4ce54fd1e44a1a119354b61e37e45da20f876d2403552630b6ae77dd11f0&')
+            .setTimestamp();
 
 
 
-    await reportChannel.send({ embeds: [embed] });
-}
+        await reportChannel.send({ embeds: [embed] });
+    }
 
     else if (command === 'reset') {
         if (!hasPermission(interaction.member, 'RESET')) {
@@ -462,7 +462,7 @@ client.on('interactionCreate', async interaction => {
                 .setImage('https://cdn.discordapp.com/attachments/1339992638677323867/1392934377054273647/ab1aaa451bd920085c3a982fc532cf536a1eeca8f32037eda2393eb640d49612.png?ex=6874a27a&is=687350fa&hm=effd4ce54fd1e44a1a119354b61e37e45da20f876d2403552630b6ae77dd11f0&')
                 .setTimestamp();
 
-            
+
 
 
             await reportChannel.send({ embeds: [embed] });
@@ -508,10 +508,10 @@ client.on('interactionCreate', async interaction => {
         const embed = new EmbedBuilder()
             .setTitle('📊 إحصائيات النشر')
             .setColor('Blue')
-            .setDescription(desc)                    
+            .setDescription(desc)
             .setImage('https://cdn.discordapp.com/attachments/1339992638677323867/1392934377054273647/ab1aaa451bd920085c3a982fc532cf536a1eeca8f32037eda2393eb640d49612.png?ex=6874a27a&is=687350fa&hm=effd4ce54fd1e44a1a119354b61e37e45da20f876d2403552630b6ae77dd11f0&')
             .setTimestamp();
-    
+
 
         await interaction.reply({ embeds: [embed] });
     }
@@ -617,5 +617,5 @@ client.on('interactionCreate', async interaction => {
 
 });
 
-client.login(config.token);
-            
+module.exports = client;
+

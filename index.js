@@ -1,7 +1,10 @@
 // index.js
 
-// يشغل بوت ديسكورد
-require('./bot');
+const config = require('./config.json');
+const client = require('./bot');
 
-// يشغل لوحة التحكم (Express Dashboard)
+// تسجيل الدخول
+client.login(config.token);
+
+// تشغيل لوحة التحكم
 require('./dashboard');
