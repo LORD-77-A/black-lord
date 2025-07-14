@@ -1,76 +1,76 @@
 {
-  "token": "MTM5MTQxMDE5MDE0NTgxODY4NQ.G6DzZ0.ao8FCjLExmrbNL30lL1xlE2IC7MNVaVzsXxFZQ",
-  "api_key": "279883424075e4f5f7667b59b8f5450947acadccac3674ee73fecb20a2ab77ac9df437c404b72867f46e3263ec1289993f2a07fe87cecfac592ac7061",
-  "user_id": "1750503",
-  "clientId": "1391410190145818685",
-  "googleApiKey": "AIzaSyA4aLhZEMBz1gbv-lCfO1JzPat1kkI-878",
-  "postIntervalMinutes": 60,
-  "botStatus": "running",
-  "summaryChannel": {
-    "id": "1391087148534468702",
-    "name": "لوق لايبر"
-  },
-  "channels": {
-    "1391087236187029505": {
-      "name": "FEMBOY 🍭",
-      "tags": [
-        "trap",
-        "femboy"
-      ],
-      "bannedTags": [
-        "furry"
-      ]
+    "token": "MTM5MTQxMDE5MDE0NTgxODY4NQ.G-9iMJ.aQMiVqV03ioJC5mlMkP2EaxeTEq_yMBUN_-pC4",
+    "api_key": "279883424075e4f5f7667b59b8f5450947acadccac3674ee73fecb20a2ab77ac9df437c404b72867f46e3263ec1289993f2a07fe87cecfac592ac7061",
+    "user_id": "1750503",
+    "clientId": "1391410190145818685",
+    "googleApiKey": "AIzaSyA4aLhZEMBz1gbv-lCfO1JzPat1kkI-878",
+    "postIntervalMinutes": 60,
+    "botStatus": "running",
+    "summaryChannel": {
+        "id": "1391087148534468702",
+        "name": "لوق لايبر"
     },
-    "1391087270726992064": {
-      "name": "FEET 👣",
-      "tags": [
-        "feet"
-      ],
-      "bannedTags": [
-        "furry"
-      ]
+    "channels": {
+        "1391087236187029505": {
+            "name": "FEMBOY 🍭",
+            "tags": [
+                "trap",
+                "femboy"
+            ],
+            "bannedTags": [
+                "furry"
+            ]
+        },
+        "1391087270726992064": {
+            "name": "FEET 👣",
+            "tags": [
+                "feet"
+            ],
+            "bannedTags": [
+                "furry"
+            ]
+        },
+        "1391417148903129138": {
+            "name": "BBC ♠️",
+            "tags": [
+                "dick"
+            ],
+            "bannedTags": [
+                "furry"
+            ]
+        },
+        "1391105793264451624": {
+            "name": "FEMDOM 👠",
+            "tags": [
+                "femdom"
+            ],
+            "bannedTags": [
+                "loli"
+            ]
+        },
+        "1391087392324059145": {
+            "name": "BLOW JOP 💦",
+            "tags": [
+                "suck"
+            ],
+            "bannedTags": []
+        }
     },
-    "1391417148903129138": {
-      "name": "BBC ♠️",
-      "tags": [
-        "dick"
-      ],
-      "bannedTags": [
-        "furry"
-      ]
+    "bannedTags": [
+        "loli",
+        "furry",
+        "animal",
+        "blood",
+        "shota"
+    ],
+    "danbooru": {
+        "login": "lord07",
+        "api_key": "VAXX9mM3PHuDRT8Xo3tXNph1"
     },
-    "1391105793264451624": {
-      "name": "FEMDOM 👠",
-      "tags": [
-        "femdom"
-      ],
-      "bannedTags": [
-        "loli"
-      ]
+    "startTime": 1752435144805,
+    "rule34": {
+        "baseUrl": "https://rule34.xxx/index.php?page=dapi&s=post&q=index",
+        "userAgent": "DiscordBot"
     },
-    "1391087392324059145": {
-      "name": "BLOW JOP 💦",
-      "tags": [
-        "suck"
-      ],
-      "bannedTags": []
-    }
-  },
-  "bannedTags": [
-    "loli",
-    "furry",
-    "animal",
-    "blood",
-    "shota"
-  ],
-  "danbooru": {
-    "login": "lord07",
-    "api_key": "VAXX9mM3PHuDRT8Xo3tXNph1"
-  },
-  "startTime": 1752435144805,
-  "rule34": {
-    "baseUrl": "https://rule34.xxx/index.php?page=dapi&s=post&q=index",
-    "userAgent": "DiscordBot"
-  },
-  "summaryChannelName": "لوق"
+    "summaryChannelName": "لوق"
 }
