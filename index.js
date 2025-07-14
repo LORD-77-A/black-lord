@@ -1,10 +1,13 @@
 // index.js
 
-const config = require('./config.json');
+// تحميل متغيرات البيئة من ملف .env
+require('dotenv').config();
+
+// تحميل ملف البوت الرئيسي
 const client = require('./bot');
 
-// تسجيل الدخول
-client.login(config.token);
-
-// تشغيل لوحة التحكم
+// تشغيل لوحة التحكم (Dashboard)
 require('./dashboard');
+
+// تسجيل الدخول إلى Discord باستخدام التوكن من .env
+client.login(process.env.TOKEN);
